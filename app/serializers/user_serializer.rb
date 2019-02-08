@@ -13,13 +13,5 @@ class UserSerializer < ActiveModel::Serializer
     end
   end
 
-  def comments
-    self.object.comments.map do |comment|
-      {
-        body: comment.body,
-        photo: comment.photo,
-        sightings: comment.sightings
-      }
-    end
-  end
+
 end
