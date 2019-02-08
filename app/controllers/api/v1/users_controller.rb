@@ -15,6 +15,11 @@ class Api::V1::UsersController < ApplicationController
     render json: @user
   end
 
+  def login
+    @user = User.where("lower(username) = ?", params[:username].downcase).first
+    render json: @user
+  end
+
   private
 
   def user_params
