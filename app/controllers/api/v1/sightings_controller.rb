@@ -26,7 +26,7 @@ class Api::V1::SightingsController < ApplicationController
   private
 
   def sighting_params
-    params.require(:sighting).permit(:location, :description, :photo, :user_id)
+    params.require(:sighting).permit(:location, :description, :photo, :lat, :lng, :user_id)
   end
 
 end

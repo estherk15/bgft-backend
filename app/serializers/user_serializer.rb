@@ -8,7 +8,9 @@ class UserSerializer < ActiveModel::Serializer
         location: sighting.location,
         description: sighting.description,
         photo: sighting.photo,
-        comments: sighting.comments
+        comments: sighting.comments,
+        lng: sighting.lng, 
+        lat: sighting.lat
       }
     end
   end

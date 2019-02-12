@@ -1,5 +1,5 @@
 class SightingSerializer < ActiveModel::Serializer
-  attributes :id, :location, :description, :photo, :user_id, :comments
+  attributes :id, :location, :description, :photo, :user_id, :comments, :lat, :lng
 
   def comments
     self.object.comments.map do |comment|
