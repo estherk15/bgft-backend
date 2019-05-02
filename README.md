@@ -1,6 +1,6 @@
 # BigFoot Finder: The Back End
 
-[Demo Video](placeholder for the demo video)
+[Demo](https://youtu.be/2Ww5gw-ZGrs)
 
 This Ruby on Rails API backend was built to persist data from the JavaScript Single Page Application and help BigFoot enthusiasts keep track of all their BigFoot sightings as well as comment on other sightings to corroborate.
 
